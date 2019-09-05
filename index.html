@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>      
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      
+      <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>     
+
+      <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+      <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+      <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>     
+
+  </head>
+  <body>
+    <div id="app" class="container text-center" ></div>
+
+    <script type="text/babel">
+      class Welcome extends React.Component {
+          render() {
+
+          var changeColor = function(){
+                alert("it work fine");
+            }
+            return (<div className ="row">
+                      <h1>Adriatic </h1>
+                      <button className ="col-md-4 btn btn-primary" onClick="{changeColor}">color swap</button>
+                      <button className ="col-md-4 btn btn-info">0</button>
+                      <button className ="col-md-4 btn btn-success">done!</button>
+                      
+                    </div> );
+          }
+        }
+
+        
+      ReactDOM.render(<Welcome/>, document.getElementById("app"));
+    
+    </script>
+    
+
+  </body>
+</html>
